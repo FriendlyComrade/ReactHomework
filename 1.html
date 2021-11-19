@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .block {
+        width: 100vmax;
+        height: 100vmin;
+        background-color: #282c34;
+        display: flex;
+        justify-content: center;
+      }
+
+      .label {
+        font-size: 1.5vmax;
+        color: #61dafb;
+        margin-top: 40vmin;
+      }
+
+      .passwordInput {
+        font-size: 2vmin;
+        margin-left: 0.5vmax;
+        width: 10vmax;
+        height: 2.5vmin;
+      }
+    </style>
+  </head>
+
+  <body style="box-sizing: border-box; margin: 0; padding: 0">
+    <script>
+      const block = document.createElement("div");
+      block.innerHTML = `
+            <span class="label">password<span/>
+            <input class="passwordInput" type="password"/>
+        `;
+      block.className = "block";
+      document.body.append(block);
+    </script>
+  </body>
+</html>
