@@ -1,0 +1,33 @@
+.formBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textInput {
+    margin-top: 30vmin;
+    width: 10vmax;
+    height: 2.5vmin;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.btn_active, .btn_disabled {
+    width: 5vmax;
+    height: 3vmin;
+    font-size: 1vmax;
+    margin-top: 1.5vmin;
+}
+
+.btn_active {
+    color: #61DAEE;
+    background-color: #282C34;
+}
+
+.btn_disabled {
+    color: #bcdbe0;
+    background-color: #606979;
+}
+
+
